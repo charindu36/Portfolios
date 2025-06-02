@@ -521,25 +521,25 @@
                 
                 <!-- Contact Form -->
                 <div data-aos="fade-left">
-                    <form class="contact-form">
+                    <form action="/post" method="POST" class="contact-form">
                         <div class="form-group">
                             <label>Name</label>
-                            <input type="text" placeholder="Your Name">
+                            <input type="text" placeholder="Your Name" name="name">
                         </div>
                         
                         <div class="form-group">
                             <label>Email</label>
-                            <input type="email" placeholder="your.email@example.com">
+                            <input type="email" placeholder="your.email@example.com" email>
                         </div>
                         
                         <div class="form-group">
                             <label>Subject</label>
-                            <input type="text" placeholder="Project Discussion">
+                            <input type="text" placeholder="Project Discussion" name="subject">
                         </div>
                         
                         <div class="form-group">
                             <label>Message</label>
-                            <textarea placeholder="Tell me about your project..."></textarea>
+                            <textarea placeholder="Tell me about your project..." name="message"></textarea>
                         </div>
                         
                         <button type="submit" class="submit-btn">
