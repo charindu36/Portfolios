@@ -3,74 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charindu Madhusanka</title>
-    <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <title> CHARINDU MADHUSANKA </title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
 </head>
 <body>
-    <!-- Preloader -->
+    <!-- preloader -->
     <div class="loader" id="loader">
         <div class="spinner"></div>
     </div>
 
-    <!-- Navigation -->
-    <nav class="glass">
+    <!-- navigation -->
+     <nav class="glass">
         <div class="container">
             <div class="nav-container">
                 <div class="logo">
                     <span class="highlight">MY</span>Portfolio
                 </div>
-                
-                <!-- Desktop Menu -->
-                <div class="nav-menu">
+
+                <!-- desktop menu -->
+                 <div class="nav-menu">
                     <a href="#home" class="nav-link">Home</a>
                     <a href="#about" class="nav-link">About</a>
-                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#projects" class="nav-link">Project</a>
                     <a href="#skills" class="nav-link">Skills</a>
                     <a href="#contact" class="nav-link">Contact</a>
-                </div>
-                
-                <!-- Controls -->
-                <div class="nav-controls">
-                    <button id="theme-toggle" class="theme-toggle">
+                 </div>
+
+                 <!-- mode control -->
+                  <div class="nav-controls">
+                    <button class="theme-toggle" id="theme-toggle">
                         <i class="fas fa-moon"></i>
                         <i class="fas fa-sun"></i>
                     </button>
-                    
-                    <!-- Mobile Menu Button -->
-                    <button id="mobile-menu-btn" class="mobile-menu-btn">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="mobile-menu">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
+                  </div>
 
-    <!-- Home Section -->
-    <section id="home" class="hero gradient-bg">
+                  <!-- mobile menu button -->
+                   <button id="mobile-menu-btn" class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                   </button>
+            </div>
+
+            <!-- mobile menu -->
+             <div class="mobile-menu" id="mobile-menu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Project</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+             </div>
+        </div>
+     </nav>
+
+     <!-- home section -->
+      <section id="home" class="hero gradient-bg">
         <div class="hero-particles">
             <div class="particle"></div>
             <div class="particle"></div>
             <div class="particle"></div>
         </div>
-        
+
         <div class="hero-content">
             <h1 class="hero-title" data-aos="fade-up">
-                Hi There 👋<br>
+                Hi There 👋 <br>
                 I'm Charindu Madhusanka
             </h1>
             <div class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
@@ -81,7 +80,7 @@
                 Building the future, one line of code at a time.
             </p>
             <div class="hero-buttons" data-aos="fade-up" data-aos-delay="600">
-                <a href="#projects" class="btn btn-primary">
+                <a href="#project" class="btn btn-primary">
                     View My Work
                 </a>
                 <a href="#contact" class="btn btn-secondary">
@@ -89,25 +88,23 @@
                 </a>
             </div>
         </div>
-    </section>
+      </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+      <!-- about section -->
+       <section id="about" class="about">
         <div class="container">
             <div class="section-title" data-aos="fade-up">
                 <h2>About Me</h2>
-                <div class="section-divider"></div>
             </div>
-            
             <div class="about-grid">
                 <div data-aos="fade-right">
-                    <div class="about-image">
-                        <i class="fas fa-user"></i>
+                    <div  class="about-image" >
+                      <!-- <i class="fas fa-user"></i> -->
+                       <img src="me.png" alt="image">
                     </div>
                 </div>
-                
-                <div data-aos="fade-left">
-                    <div class="about-content">
+                <div>
+                    <div class="about-content" data-aos="fade-left">
                         <h3>IT Undergraduate | Future Software Engineer</h3>
                         <p>
                             I'm a dedicated IT undergraduate with a passion for technology and innovation. 
@@ -119,7 +116,7 @@
                             to creating meaningful digital experiences. I specialize in web development, 
                             software engineering, and emerging technologies.
                         </p>
-                        
+
                         <div class="stats-grid">
                             <div class="stat-card">
                                 <div class="stat-number">10+</div>
@@ -130,7 +127,6 @@
                                 <div class="stat-label">Years Learning</div>
                             </div>
                         </div>
-                        
                         <a href="#" class="resume-link">
                             <i class="fas fa-download"></i>
                             Download Resume
@@ -139,9 +135,9 @@
                 </div>
             </div>
         </div>
-    </section>
+       </section>
 
-    <!-- Projects Section -->
+<!-- Projects Section -->
     <section id="projects">
         <div class="container">
             <div class="section-title" data-aos="fade-up">
@@ -312,8 +308,8 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <!-- skills section -->
+     <section id="skills" class="skills">
         <div class="container">
             <div class="section-title" data-aos="fade-up">
                 <h2>Skills & Technologies</h2>
@@ -322,25 +318,22 @@
                     Technologies and tools I work with
                 </p>
             </div>
-            
+
             <div class="skills-grid">
-                <!-- Frontend -->
-                <div class="skill-category" data-aos="fade-up">
+                <!-- frontend -->
+                 <div class="skill-category" data-aos="fade-up">
                     <div class="skill-icon blue">
                         <i class="fas fa-code"></i>
                     </div>
                     <h3>Frontend</h3>
                     <ul class="skill-list">
-                        <li>HTML5 & CSS3</li>
+                        <li>HTML & CSS</li>
                         <li>JavaScript (ES6+)</li>
                         <li>React.js</li>
-                        <!-- <li>Vue.js</li>
-                        <li>Tailwind CSS</li> -->
                     </ul>
-                </div>
-                
-                <!-- Backend -->
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                 </div>
+                 <!-- backend -->
+                  <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
                     <div class="skill-icon green">
                         <i class="fas fa-server"></i>
                     </div>
@@ -349,13 +342,11 @@
                         <li>Node.js</li>
                         <li>Python</li>
                         <li>Express.js</li>
-                        <!-- <li>Django</li> -->
                         <li>RESTful APIs</li>
                     </ul>
-                </div>
-                
-                <!-- Database -->
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                 </div>
+                 <!-- database -->
+                  <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
                     <div class="skill-icon slate">
                         <i class="fas fa-database"></i>
                     </div>
@@ -363,34 +354,27 @@
                     <ul class="skill-list">
                         <li>MongoDB</li>
                         <li>MySQL</li>
-                        <!-- <li>PostgreSQL</li>
-                        <li>Firebase</li>
-                        <li>Redis</li> -->
                     </ul>
-                </div>
-                
-                <!-- Tools -->
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="600">
+                 </div>
+                 <!-- tools -->
+                  <div class="skill-category" data-aos="fade-up" data-aos-delay="600">
                     <div class="skill-icon orange">
                         <i class="fas fa-tools"></i>
                     </div>
-                    <h3>Tools</h3>
+                    <h3>Frontend</h3>
                     <ul class="skill-list">
                         <li>Git & GitHub</li>
-                        <!-- <li>Docker</li>
-                        <li>AWS</li> -->
                         <li>VS Code</li>
                         <li>Figma</li>
                         <li>Postman</li>
                     </ul>
-                </div>
+                 </div>
             </div>
-            
-            <!-- Skill Progress Bars -->
-            <div class="progress-grid" data-aos="fade-up">
-                <div>
+            <!-- skill progress bars -->
+             <div class="progress-grid" data-aos="fade-up">
+                <div >
                     <div class="skill-progress-item">
-                        <div class="skill-progress-header">
+                        <div class="skill-progree-header">
                             <span>JavaScript</span>
                             <span>75%</span>
                         </div>
@@ -398,7 +382,7 @@
                             <div class="skill-progress" data-width="75"></div>
                         </div>
                     </div>
-                    
+
                     <div class="skill-progress-item">
                         <div class="skill-progress-header">
                             <span>React.js</span>
@@ -451,12 +435,12 @@
                         </div>
                     </div>
                 </div>
-            </div>
+             </div>
         </div>
-    </section>
+     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
+     <!-- contact section -->
+      <section id="contact">
         <div class="container">
             <div class="section-title" data-aos="fade-up">
                 <h2>Get In Touch</h2>
@@ -465,16 +449,13 @@
                     Let's connect and discuss opportunities
                 </p>
             </div>
-            
             <div class="contact-grid">
-                <!-- Contact Info -->
-                <div class="contact-info" data-aos="fade-right">
+                <!-- contact info -->
+                 <div class="contact-info" data-aos="fade-right">
                     <h3>Let's talk about everything!</h3>
-                    <p>
-                        I'm always open to discussing new opportunities, interesting projects, 
+                    <p>I'm always open to discussing new opportunities, interesting projects, 
                         or just having a chat about technology and innovation.
                     </p>
-                    
                     <div class="contact-item">
                         <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
@@ -484,209 +465,73 @@
                             <div class="contact-value">charindumadhusanka801@gmail.com</div>
                         </div>
                     </div>
-                    
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <i class="fab fa-linkedin"></i>
+                            <i class="fas fa-linkedin"></i>
                         </div>
                         <div class="contact-details">
                             <div class="contact-label">LinkedIn</div>
-                            <div class="contact-value">linkedin.com/in/charindu-madhusanka</div>
+                            <div class="contact-value"><a href="linkedin.com/in/charindu-madhusanka">linkedin.com/in/charindu-madhusanka</a></div>
                         </div>
                     </div>
-                    
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <i class="fab fa-github"></i>
+                            <i class="fas fa-github"></i>
                         </div>
                         <div class="contact-details">
                             <div class="contact-label">GitHub</div>
-                            <div class="contact-value">github.com/charindu36</div>
+                            <div class="contact-value"><a href="github.com/charindu36">github.com/charindu36</a></div>
                         </div>
                     </div>
-                    
-                    <!-- Social Links -->
-                    <div class="social-links">
-                        <a href="#" class="social-link">
+                    <!-- social link -->
+                     <div class="social-links">
+                        <a href="" class="social-link">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#" class="social-link">
+                        <a href="" class="social-link">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#" class="social-link">
+                        <a href="" class="social-link">
                             <i class="fab fa-discord"></i>
                         </a>
-                    </div>
-                </div>
-                
-                <!-- Contact Form -->
-                <div data-aos="fade-left">
-                    <form action="/post" method="POST" class="contact-form">
+                     </div>
+                 </div>
+                 <!-- contact form -->
+                  <div data-aos="fade-left">
+                    <!-- <form action="https://script.google.com/macros/s/AKfycbyR2aB_jxTcBxUQhHzYUMRAzvVyOtQByLI6e7NBJoeNMVD5HAwdWGiVKsWwCMPl-o9dDg/exec" method="POST"  class="contact-form"> -->
+                        <form action="https://formsubmit.co/charindumadhusanka801@gmail.com" method="POST"  class="contact-form">
                         <div class="form-group">
                             <label>Name</label>
-                            <input type="text" placeholder="Your Name" name="name">
+                            <input type="text" name="name" placeholder="Your Name">
                         </div>
-                        
                         <div class="form-group">
                             <label>Email</label>
-                            <input type="email" placeholder="your.email@example.com" email>
+                            <input type="email" name="email" placeholder="your.email@example.com" required>
                         </div>
-                        
                         <div class="form-group">
                             <label>Subject</label>
-                            <input type="text" placeholder="Project Discussion" name="subject">
+                            <input type="text" name="subject" placeholder="Project Discussion">
                         </div>
-                        
                         <div class="form-group">
                             <label>Message</label>
-                            <textarea placeholder="Tell me about your project..." name="message"></textarea>
+                            <textarea type="text" name="message" placeholder="Tell me about your project..."></textarea>
                         </div>
-                        
-                        <button type="submit" class="submit-btn">
-                            Send Message
-                        </button>
+                        <button type="submit" name="submit" class="submit-btn">Send Message</button>
                     </form>
-                </div>
+                  </div>
             </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Footer -->
-    <footer>
+      <!-- footer -->
+       <footer>
         <div class="container">
-            <p>&copy; 2025 charindu madhusanka. All rights reserved.</p>
+            <p>&copy;2025 charindu-madhusanka. All rights reserved.</p>
             <p class="footer-subtitle">Built with ❤️ using HTML, CSS, and JavaScript</p>
         </div>
-    </footer>
-
-    <script>
-        // Initialize AOS
-        AOS.init({
-            duration: 1000,
-            once: true,
-            offset: 100
-        });
-
-        // Preloader
-        window.addEventListener('load', function() {
-            setTimeout(() => {
-                document.getElementById('loader').classList.add('hidden');
-            }, 1000);
-        });
-
-        // Typed.js initialization
-        document.addEventListener('DOMContentLoaded', function() {
-            new Typed('#typed-text', {
-                strings: [
-                    'IT Undergraduate',
-                    'Future Software Engineer',
-                    'Web Developer',
-                    'Problem Solver',
-                    'Tech Enthusiast'
-                ],
-                typeSpeed: 50,
-                backSpeed: 30,
-                backDelay: 2000,
-                loop: true
-            });
-        });
-
-        // Dark mode toggle
-        const themeToggle = document.getElementById('theme-toggle');
-        const body = document.body;
-
-        // Check for saved theme preference or default to light mode
-        const currentTheme = localStorage.getItem('theme') || 'light';
-        if (currentTheme === 'dark') {
-            body.classList.add('dark');
-        }
-
-        themeToggle.addEventListener('click', function() {
-            body.classList.toggle('dark');
-            const theme = body.classList.contains('dark') ? 'dark' : 'light';
-            localStorage.setItem('theme', theme);
-        });
-
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuBtn.addEventListener('click', function() {
-            mobileMenu.classList.toggle('show');
-        });
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                    // Close mobile menu if open
-                    mobileMenu.classList.remove('show');
-                }
-            });
-        });
-
-        // Active navigation link
-        window.addEventListener('scroll', function() {
-            const sections = document.querySelectorAll('section[id]');
-            const navLinks = document.querySelectorAll('.nav-link');
-            
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (scrollY >= (sectionTop - 200)) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('active');
-                }
-            });
-        });
-
-        // Skill progress animation
-        const skillProgressBars = document.querySelectorAll('.skill-progress');
-        const skillsSection = document.getElementById('skills');
-
-        const animateSkills = () => {
-            const sectionTop = skillsSection.offsetTop;
-            const sectionHeight = skillsSection.clientHeight;
-            const scrollPosition = window.scrollY + window.innerHeight;
-
-            if (scrollPosition > sectionTop + 200) {
-                skillProgressBars.forEach(bar => {
-                    const width = bar.getAttribute('data-width');
-                    bar.style.width = width + '%';
-                });
-                window.removeEventListener('scroll', animateSkills);
-            }
-        };
-
-        window.addEventListener('scroll', animateSkills);
-
-        // Contact form submission
-        document.querySelector('.contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! I\'ll get back to you soon.');
-            this.reset();
-        });
-
-        // Parallax effect for hero section
-        window.addEventListener('scroll', function() {
-            const scrolled = window.pageYOffset;
-            const parallax = document.querySelector('#home');
-            const speed = scrolled * 0.5;
-            parallax.style.transform = `translateY(${speed}px)`;
-        });
-    </script>
+       </footer>
+    
+       <script src="https://smtpjs.com/v3/smtp.js"></script>
+     <script src="script.js"></script>
 </body>
 </html>
