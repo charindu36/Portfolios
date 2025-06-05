@@ -365,6 +365,7 @@ body.dark .section-subtitle {
 /* about section */
 .about {
   background-color: var(--gray-50);
+
 }
 body.dark .about {
   background-color: var(--gray-800);
@@ -401,6 +402,11 @@ body.dark .about {
   font-size: 1.125rem;
   margin-bottom: 1.5rem;
   line-height: 1.7;
+}
+.about-content{
+   backdrop-filter: blur(10px);
+   padding: 5px 15px;
+   border-radius: 15px;
 }
 .stats-grid {
   display: grid;
