@@ -36,6 +36,7 @@ body.dark {
 }
 .container {
   max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -850,6 +851,7 @@ body.dark .form-group textarea {
 
 /* footer */
 footer {
+  position: relative;
   background-color: var(--gray-900);
   color: var(--white);
   padding: 2rem 0;
@@ -860,6 +862,19 @@ footer p {
 }
 footer .footer-subtitle {
   color: var(--gray-400);
+}
+.top{
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  font-size: 1.6rem;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 /* utility classes */
