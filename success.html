@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHARINDU MADHUSANKA</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --primary-50: #eff6ff;
+        --primary-500: #3b82f6;
+        --primary-600: #2563eb;
+        --primary-700: #1d4ed8;
+        --primary-900: #1e3a8a;
+        --gray-50: #f9fafb;
+        --gray-100: #f3f4f6;
+        --gray-200: #e5e7eb;
+        --gray-300: #d1d5db;
+        --gray-400: #9ca3af;
+        --gray-500: #6b7280;
+        --gray-600: #4b5563;
+        --gray-700: #374151;
+        --gray-800: #1f2937;
+        --gray-900: #111827;
+        --white: #ffffff;
+        --black: #000000;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.6;
+        color: var(--gray-900);
+        background-color: var(--white);
+        transition: all 0.3s ease;
+      }
+      body.dark {
+        color: var(--white);
+        background-color: var(--gray-900);
+      }
+      .container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 1rem;
+      }
+      @media (max-width: 640px) {
+        .container {
+          padding: 0 1.5rem;
+        }
+      }
+      @media (max-width: 1024px) {
+        .container {
+          padding: 0 2rem;
+        }
+      }
+
+      footer {
+        background-color: var(--gray-900);
+        color: var(--white);
+        padding: 2rem 0;
+        text-align: center;
+      }
+      footer p {
+        margin-bottom: 0.5rem;
+      }
+      footer .footer-subtitle {
+        color: var(--gray-400);
+      }
+      h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+      .container-text {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        top: 50%;left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+      .btn:hover{
+        background-color: var(--primary-500);
+        color: var(--white);
+        cursor: pointer;
+      }
+      .btn:hover a{
+        color: var(--white);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- preloader -->
+    <div class="loader" id="loader">
+      <div class="spinner"></div>
+    </div>
+    <!-- contact section -->
+    <div class="container-text">
+      <div
+        class="thumb"
+        style="
+          position: relative;
+          background-color: greenyellow;
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+        "
+      >
+        <i
+          style="
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 4rem;
+          "
+          class="fa-regular fa-thumbs-up"
+        ></i>
+      </div>
+      <div class="text">
+        <h3>Success! We will get back to you very, very soon.</h3>
+      </div>
+      <a href="https://portfolio-website-madhusanka.netlify.app/"><button class="btn">Back</a></button>
+    </div>
+    <!-- footer -->
+    <footer  style="position:absolute;bottom: 0;width: 100%;">
+      <div class="container">
+        <p>&copy;2025 charindu-madhusanka. All rights reserved.</p>
+        <p class="footer-subtitle">
+          Built with ❤️ using HTML, CSS, and JavaScript
+        </p>
+        
+      </div>
+    </footer>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
