@@ -361,7 +361,7 @@ body.dark .section-subtitle {
 .btn-secondary:hover {
   background-color: var(--white);
   color: var(--gray-900);
-}
+} 
 
 /* about section */
 .about {
