@@ -72,10 +72,34 @@ body.dark {
     transform: translateY(-20px);
   }
 }
-@keyframes spin {
+/* @keyframes spin {
   to {
     transform: rotate(360deg);
   }
+} */
+@keyframes wave {
+  0%,
+  100% {
+    height: 20px;
+  }
+  50% {
+    height: 60px;
+  }
+}
+.bar:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.bar:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.bar:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.bar:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.bar:nth-child(6) {
+  animation-delay: 0.5s;
 }
 .gradient-bg {
   background: linear-gradient(-45deg, #344b59, #71bcbf, #5d91ec, #7d1f77);
@@ -98,32 +122,31 @@ body.dark .gradient-bg {
 /* loader */
 .loader {
   position: fixed;
+  display: flex;
   top: 0;
   left: 0;
+  gap: 5px;
   width: 100%;
   height: 100%;
-  background: var(--white);
-  display: flex;
-  justify-content: center;
+  background-color: var(--white);
   align-items: center;
+  justify-content: center;
   z-index: 9999;
-  transition: opacity 0.5s ease;
 }
+.bar {
+  width: 8px;
+  height: 60px;
+  border-radius: 3px;
+  background-color: #3498db;
+  animation: wave 0.8s infinite ease-in-out;
+}
+
 body.dark .loader {
   background: #1a202c;
 }
 .loader.hidden {
   opacity: 0;
   pointer-events: none;
-}
-.spinner {
-  width: 4rem;
-  height: 4rem;
-  border: 2px solid transparent;
-  border-top: 2px solid var(--primary-500);
-  border-bottom: 2px solid var(--primary-500);
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
 }
 
 /* navigation */
@@ -361,12 +384,11 @@ body.dark .section-subtitle {
 .btn-secondary:hover {
   background-color: var(--white);
   color: var(--gray-900);
-} 
+}
 
 /* about section */
 .about {
   background-color: var(--gray-50);
-
 }
 body.dark .about {
   background-color: var(--gray-800);
@@ -395,13 +417,9 @@ body.dark .about {
   border-radius: 50%;
   transition: all 1.5s;
 }
-.about-image img:hover{
-  box-shadow:
-    0 0 10px #0ff,
-    0 0 20px #0ff,
-    0 0 30px #0ff,
-    0 0 40px #0ff;
-  padding: 2px; 
+.about-image img:hover {
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff;
+  padding: 2px;
 }
 .about-content h3 {
   font-size: 1.5rem;
@@ -413,10 +431,10 @@ body.dark .about {
   margin-bottom: 1.5rem;
   line-height: 1.7;
 }
-.about-content{
-   backdrop-filter: blur(10px);
-   padding: 5px 15px;
-   border-radius: 15px;
+.about-content {
+  backdrop-filter: blur(10px);
+  padding: 5px 15px;
+  border-radius: 15px;
 }
 .stats-grid {
   display: grid;
@@ -872,12 +890,12 @@ footer p {
 footer .footer-subtitle {
   color: var(--gray-400);
 }
-.top{
-  background-color: blue;
-  width: 50px;
-  height: 50px;
+.top {
+  background-color: rgba(0, 0, 255, 0.214);
+  width: 30px;
+  height: 30px;
   padding: 5px;
-  font-size: 1.6rem;
+  font-size: 1rem;
   position: absolute;
   right: 5px;
   top: 5px;
@@ -921,31 +939,35 @@ body.dark .theme-toggle .fa-sun {
   }
 }
 
-.cursor{
-    position: absolute;
-    z-index: 99999;
-    background: #2696e8;
-    width: 20px;
-    height:20px ;
-    border-radius: 50%;
-    pointer-events: none;
-    box-shadow: 0 0 20px #2696e8, 0 0 60px #2696e8, 0 0 100px #2696e8;
-    animation:  color 5s infinite;
-    transform: translate(-50%,-50%);
-    display: none;
+.cursor {
+  position: absolute;
+  z-index: 99999;
+  background: #2696e8;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0 0 20px #2696e8, 0 0 60px #2696e8, 0 0 100px #2696e8;
+  animation: color 5s infinite;
+  transform: translate(-50%, -50%);
+  display: none;
 }
-.cursor::before{
-    content: '';
-    z-index: 99999;
-    position: absolute;
-    background: #2696e8;
-    width: 50px;
-    height: 50px;
-    opacity: 0.2;
-    transform: translate(-30%,-30%);
-    border-radius: 50%;
+.cursor::before {
+  content: "";
+  z-index: 99999;
+  position: absolute;
+  background: #2696e8;
+  width: 50px;
+  height: 50px;
+  opacity: 0.2;
+  transform: translate(-30%, -30%);
+  border-radius: 50%;
 }
 @keyframes color {
-    0%{filter: hue-rotate(0deg);}
-    100%{filter: hue-rotate(360deg);}
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }

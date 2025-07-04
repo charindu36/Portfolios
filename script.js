@@ -2,7 +2,7 @@
 window.addEventListener("load", () => {
   setTimeout(() => {
     document.getElementById("loader").classList.add("hidden");
-  }, 250);
+  }, 2000);
 });
 
 // mobile menu toggle
