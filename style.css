@@ -937,7 +937,14 @@ body.dark .theme-toggle .fa-sun {
     width: 16rem;
     height: 16rem;
   }
+  section{
+    margin: auto 0;
+  }
+  .hero .gradient-bg{
+    width: 100%;
+  }
 }
+
 
 .cursor {
   position: absolute;
