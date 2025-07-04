@@ -507,9 +507,7 @@ body.dark .project-card {
 .project-card:hover {
   transform: translateY(-10px);
 }
-/* .project-card:hover .project-image{
-    transform: scale(0.9);
-} */
+
 
 .project-image {
   height: 12rem;
@@ -938,7 +936,9 @@ body.dark .theme-toggle .fa-sun {
     height: 16rem;
   }
   section{
-    margin: auto 0;
+   justify-content: center ;
+   justify-items: center ;
+   align-items: center ;
   }
   .hero .gradient-bg{
     width: 100%;
