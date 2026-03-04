@@ -1,556 +1,612 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> CHARINDU MADHUSANKA </title>
-    <link rel="icon" href="favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="notification.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHARINDU MADHUSANKA</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="notification.css" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- preloader -->
-     <div class="loader" id="loader">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+    <div class="loader" id="loader">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
     </div>
     <div class="cursor"></div>
     <!-- navigation -->
     <nav class="glass">
-        <div class="container">
-            <div class="nav-container">
-                <div class="logo">
-                    <span class="highlight">MY</span>Portfolio
-                </div>
-                
-                <!-- Desktop Menu -->
-                <div class="nav-menu">
-                    <a href="#home" class="nav-link">Home</a>
-                    <a href="#about" class="nav-link">About</a>
-                    <a href="#projects" class="nav-link">Projects</a>
-                    <a href="#skills" class="nav-link">Skills</a>
-                    <a href="#contact" class="nav-link">Contact</a>
-                </div>
-                
-                <!-- Controls -->
-                <div class="nav-controls">
-                    <div class="notification">
-                        <span class="icon"><a href="notification.html"><i class="fa-solid fa-bell"></i></a></span>
-                        <span class="badge">1</span>
-                    </div>
-                    <button id="theme-toggle" class="theme-toggle">
-                        <i class="fas fa-moon"></i>
-                        <i class="fas fa-sun"></i>
-                    </button>
-                    
-                    <!-- Mobile Menu Button -->
-                    <button id="mobile-menu-btn" class="mobile-menu-btn">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
-            </div>
+      <div class="container">
+        <div class="nav-container">
+          <div class="logo"><span class="highlight">MY</span>Portfolio</div>
+
+          <!-- Desktop Menu -->
+          <div class="nav-menu">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </div>
+
+          <!-- Controls -->
+          <div class="nav-controls">
+            <button id="theme-toggle" class="theme-toggle">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+            </button>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="mobile-menu-btn">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
         </div>
-        
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="mobile-menu">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="mobile-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
     </nav>
 
-     <!-- home section -->
-      <section id="home" class="hero gradient-bg">
-        <div class="hero-particles">
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-        </div>
+    <!-- home section -->
+    <section id="home" class="hero gradient-bg">
+      <div class="hero-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+      </div>
 
-        <div class="hero-content">
-            <h1 class="hero-title" data-aos="fade-up">
-                Hi There <span class="hi">👋</span><br>
-                I'm Charindu Madhusanka
-            </h1>
-            <div class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
-                <span id="typed-text"></span>
-            </div>
-            <p class="hero-description" data-aos="fade-up" data-aos-delay="400">
-                Passionate IT undergraduate with a drive for innovation and problem-solving. 
-                Building the future, one line of code at a time.
-            </p>
-            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="600">
-                <a href="#projects" class="btn btn-primary">
-                    View My Work
-                </a>
-                <a href="#contact" class="btn btn-secondary">
-                    Get In Touch
-                </a>
-            </div>
+      <div class="hero-content">
+        <h1 class="hero-title" data-aos="fade-up">
+          Hi There <span class="hi">👋</span><br />
+          I'm Charindu Madhusanka
+        </h1>
+        <div class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+          <span id="typed-text"></span>
         </div>
-      </section>
+        <p class="hero-description" data-aos="fade-up" data-aos-delay="400">
+          Passionate IT undergraduate with a drive for innovation and
+          problem-solving. Building the future, one line of code at a time.
+        </p>
+        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="600">
+          <a href="#projects" class="btn btn-primary"> View My Work </a>
+          <a href="#contact" class="btn btn-secondary"> Get In Touch </a>
+        </div>
+      </div>
+    </section>
 
-      <!-- about section -->
-       <section id="about" class="about">
-        <div class="container">
-            <div class="section-title" data-aos="fade-up">
-                <h2>About Me</h2>
+    <!-- about section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>About Me</h2>
+        </div>
+        <div class="about-grid">
+          <div data-aos="fade-right">
+            <div class="about-image">
+              <!-- <i class="fas fa-user"></i> -->
+              <img src="me.png" alt="image" />
             </div>
-            <div class="about-grid">
-                <div data-aos="fade-right">
-                    <div  class="about-image" >
-                      <!-- <i class="fas fa-user"></i> -->
-                       <img src="me.png" alt="image">
-                    </div>
+          </div>
+          <div>
+            <div class="about-content" data-aos="fade-left">
+              <h3>IT Undergraduate | Future Software Engineer</h3>
+              <p>
+                I'm a dedicated IT undergraduate with a passion for technology
+                and innovation. Currently pursuing my degree in Information
+                Technology, I'm constantly exploring new technologies and
+                building projects that solve real-world problems.
+              </p>
+              <p>
+                My journey in tech started with curiosity and has evolved into a
+                deep commitment to creating meaningful digital experiences. I
+                specialize in web development, software engineering, and
+                emerging technologies.
+              </p>
+
+              <div class="stats-grid">
+                <div class="stat-card">
+                  <div class="stat-number">10+</div>
+                  <div class="stat-label">Projects Completed</div>
                 </div>
-                <div>
-                    <div class="about-content" data-aos="fade-left">
-                        <h3>IT Undergraduate | Future Software Engineer</h3>
-                        <p>
-                            I'm a dedicated IT undergraduate with a passion for technology and innovation. 
-                            Currently pursuing my degree in Information Technology, I'm constantly exploring 
-                            new technologies and building projects that solve real-world problems.
-                        </p>
-                        <p>
-                            My journey in tech started with curiosity and has evolved into a deep commitment 
-                            to creating meaningful digital experiences. I specialize in web development, 
-                            software engineering, and emerging technologies.
-                        </p>
-
-                        <div class="stats-grid">
-                            <div class="stat-card">
-                                <div class="stat-number">10+</div>
-                                <div class="stat-label">Projects Completed</div>
-                            </div>
-                            <div class="stat-card">
-                                <div class="stat-number">1+</div>
-                                <div class="stat-label">Years Learning</div>
-                            </div>
-                        </div>
-                        <a href="Resum.pdf" class="resume-link" download>
-                            <i class="fas fa-download"></i>
-                            Download Resume
-                        </a>
-                    </div>
+                <div class="stat-card">
+                  <div class="stat-number">1+</div>
+                  <div class="stat-label">Years Learning</div>
                 </div>
+              </div>
+              <a href="Resum.pdf" class="resume-link" download>
+                <i class="fas fa-download"></i>
+                Download Resume
+              </a>
             </div>
+          </div>
         </div>
-       </section>
+      </div>
+    </section>
 
-<!-- Projects Section -->
+    <!-- Projects Section -->
     <section id="projects">
-        <div class="container">
-            <div class="section-title" data-aos="fade-up">
-                <h2>My Projects</h2>
-                <div class="section-divider"></div>
-                <p class="section-subtitle">
-                    Here are some of my recent projects that showcase my skills and creativity
-                </p>
-            </div>
-            
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card" data-aos="fade-up">
-                    <div class="project-image" style="background: linear-gradient(135deg, #3b82f6, #8b5cf6);">
-                        <i class="fas fa-shopping-cart"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">E-Commerce Platform</h3>
-                        <p class="project-description">
-                            A full-stack e-commerce solution with user authentication, payment integration, and admin dashboard.
-                        </p>
-                        <div class="project-tags">
-                            <span class="project-tag tag-blue">React</span>
-                            <span class="project-tag tag-green">Node.js</span>
-                            <span class="project-tag tag-purple">MongoDB</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i>Code
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 2 -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-image" style="background: linear-gradient(135deg, #10b981, #14b8a6);">
-                        <i class="fas fa-tasks"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Task Management App</h3>
-                        <p class="project-description">
-                            A collaborative task management application with real-time updates and team collaboration features.
-                        </p>
-                        <div class="project-tags">
-                            <span class="project-tag tag-blue">Vue.js</span>
-                            <span class="project-tag tag-yellow">Firebase</span>
-                            <span class="project-tag tag-red">Socket.io</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i>Code
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 3 -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="project-image" style="background: linear-gradient(135deg, #64748b, #3b82f6);">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Data Visualization Dashboard</h3>
-                        <p class="project-description">
-                            An interactive dashboard for data visualization with charts, graphs, and real-time analytics.
-                        </p>
-                        <div class="project-tags">
-                            <span class="project-tag tag-blue">React</span>
-                            <span class="project-tag tag-orange">D3.js</span>
-                            <span class="project-tag tag-indigo">Python</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i>Code
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 4 -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
-                    <div class="project-image" style="background: linear-gradient(135deg, #ef4444, #f97316);">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Mobile Weather App</h3>
-                        <p class="project-description">
-                            A cross-platform mobile application providing weather forecasts with location-based services.
-                        </p>
-                        <div class="project-tags">
-                            <span class="project-tag tag-blue">React Native</span>
-                            <span class="project-tag tag-green">API Integration</span>
-                            <span class="project-tag tag-purple">Redux</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i>Code
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 5 -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="800">
-                    <div class="project-image" style="background: linear-gradient(135deg, #14b8a6, #06b6d4);">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">AI Chatbot</h3>
-                        <p class="project-description">
-                            An intelligent chatbot using natural language processing for customer service automation.
-                        </p>
-                        <div class="project-tags">
-                            <span class="project-tag tag-blue">Python</span>
-                            <span class="project-tag tag-green">TensorFlow</span>
-                            <span class="project-tag tag-yellow">NLP</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i>Code
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 6 -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="1000">
-                    <div class="project-image" style="background: linear-gradient(135deg, #374151, #64748b);">
-                        <i class="fas fa-gamepad"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Web-based Game</h3>
-                        <p class="project-description">
-                            An interactive web game with multiplayer functionality and real-time gameplay mechanics.
-                        </p>
-                        <div class="project-tags">
-                            <span class="project-tag tag-blue">JavaScript</span>
-                            <span class="project-tag tag-green">Canvas API</span>
-                            <span class="project-tag tag-red">WebSocket</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i>Code
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>My Projects</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Here are some of my recent projects that showcase my skills and
+            creativity
+          </p>
         </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card" data-aos="fade-up">
+            <div
+              class="project-image"
+              style="background: linear-gradient(135deg, #3b82f6, #8b5cf6)"
+            >
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">E-Commerce Platform</h3>
+              <p class="project-description">
+                A full-stack e-commerce solution with user authentication,
+                payment integration, and admin dashboard.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag tag-blue">React</span>
+                <span class="project-tag tag-green">Node.js</span>
+                <span class="project-tag tag-purple">MongoDB</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i>Code
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div
+              class="project-image"
+              style="background: linear-gradient(135deg, #10b981, #14b8a6)"
+            >
+              <i class="fas fa-tasks"></i>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Task Management App</h3>
+              <p class="project-description">
+                A collaborative task management application with real-time
+                updates and team collaboration features.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag tag-blue">Vue.js</span>
+                <span class="project-tag tag-yellow">Firebase</span>
+                <span class="project-tag tag-red">Socket.io</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i>Code
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+            <div
+              class="project-image"
+              style="background: linear-gradient(135deg, #64748b, #3b82f6)"
+            >
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Data Visualization Dashboard</h3>
+              <p class="project-description">
+                An interactive dashboard for data visualization with charts,
+                graphs, and real-time analytics.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag tag-blue">React</span>
+                <span class="project-tag tag-orange">D3.js</span>
+                <span class="project-tag tag-indigo">Python</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i>Code
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+            <div
+              class="project-image"
+              style="background: linear-gradient(135deg, #ef4444, #f97316)"
+            >
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Mobile Weather App</h3>
+              <p class="project-description">
+                A cross-platform mobile application providing weather forecasts
+                with location-based services.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag tag-blue">React Native</span>
+                <span class="project-tag tag-green">API Integration</span>
+                <span class="project-tag tag-purple">Redux</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i>Code
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="project-card" data-aos="fade-up" data-aos-delay="800">
+            <div
+              class="project-image"
+              style="background: linear-gradient(135deg, #14b8a6, #06b6d4)"
+            >
+              <i class="fas fa-robot"></i>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">AI Chatbot</h3>
+              <p class="project-description">
+                An intelligent chatbot using natural language processing for
+                customer service automation.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag tag-blue">Python</span>
+                <span class="project-tag tag-green">TensorFlow</span>
+                <span class="project-tag tag-yellow">NLP</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i>Code
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="project-card" data-aos="fade-up" data-aos-delay="1000">
+            <div
+              class="project-image"
+              style="background: linear-gradient(135deg, #374151, #64748b)"
+            >
+              <i class="fas fa-gamepad"></i>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Web-based Game</h3>
+              <p class="project-description">
+                An interactive web game with multiplayer functionality and
+                real-time gameplay mechanics.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag tag-blue">JavaScript</span>
+                <span class="project-tag tag-green">Canvas API</span>
+                <span class="project-tag tag-red">WebSocket</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i>Code
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- skills section -->
-     <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-title" data-aos="fade-up">
-                <h2>Skills & Technologies</h2>
-                <div class="section-divider"></div>
-                <p class="section-subtitle">
-                    Technologies and tools I work with
-                </p>
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Skills & Technologies</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">Technologies and tools I work with</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- frontend -->
+          <div class="skill-category" data-aos="fade-up">
+            <div class="skill-icon blue">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Frontend</h3>
+            <ul class="skill-list">
+              <li>HTML & CSS</li>
+              <li>JavaScript (ES6+)</li>
+              <li>React.js</li>
+            </ul>
+          </div>
+          <!-- backend -->
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-icon green">
+              <i class="fas fa-server"></i>
+            </div>
+            <h3>Backend</h3>
+            <ul class="skill-list">
+              <li>Node.js</li>
+              <li>Python</li>
+              <li>Express.js</li>
+              <li>RESTful APIs</li>
+            </ul>
+          </div>
+          <!-- database -->
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-icon slate">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>Database</h3>
+            <ul class="skill-list">
+              <li>MongoDB</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
+          <!-- tools -->
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="600">
+            <div class="skill-icon orange">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3>Frontend</h3>
+            <ul class="skill-list">
+              <li>Git & GitHub</li>
+              <li>VS Code</li>
+              <!-- <li>Figma</li> -->
+              <li>Postman</li>
+            </ul>
+          </div>
+        </div>
+        <!-- skill progress bars -->
+        <div class="progress-grid" data-aos="fade-up">
+          <div>
+            <div class="skill-progress-item">
+              <div class="skill-progress-header">
+                <span>JavaScript</span>
+                <span>75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="75"></div>
+              </div>
             </div>
 
-            <div class="skills-grid">
-                <!-- frontend -->
-                 <div class="skill-category" data-aos="fade-up">
-                    <div class="skill-icon blue">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>Frontend</h3>
-                    <ul class="skill-list">
-                        <li>HTML & CSS</li>
-                        <li>JavaScript (ES6+)</li>
-                        <li>React.js</li>
-                    </ul>
-                 </div>
-                 <!-- backend -->
-                  <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-                    <div class="skill-icon green">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h3>Backend</h3>
-                    <ul class="skill-list">
-                        <li>Node.js</li>
-                        <li>Python</li>
-                        <li>Express.js</li>
-                        <li>RESTful APIs</li>
-                    </ul>
-                 </div>
-                 <!-- database -->
-                  <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
-                    <div class="skill-icon slate">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3>Database</h3>
-                    <ul class="skill-list">
-                        <li>MongoDB</li>
-                        <li>MySQL</li>
-                    </ul>
-                 </div>
-                 <!-- tools -->
-                  <div class="skill-category" data-aos="fade-up" data-aos-delay="600">
-                    <div class="skill-icon orange">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h3>Frontend</h3>
-                    <ul class="skill-list">
-                        <li>Git & GitHub</li>
-                        <li>VS Code</li>
-                        <!-- <li>Figma</li> -->
-                        <li>Postman</li>
-                    </ul>
-                 </div>
+            <div class="skill-progress-item">
+              <div class="skill-progress-header">
+                <span>React.js</span>
+                <span>55%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="55"></div>
+              </div>
             </div>
-            <!-- skill progress bars -->
-             <div class="progress-grid" data-aos="fade-up">
-                <div >
-                    <div class="skill-progress-item">
-                        <div class="skill-progree-header">
-                            <span>JavaScript</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="75"></div>
-                        </div>
-                    </div>
 
-                    <div class="skill-progress-item">
-                        <div class="skill-progress-header">
-                            <span>React.js</span>
-                            <span>55%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="55"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-progress-item">
-                        <div class="skill-progress-header">
-                            <span>Node.js</span>
-                            <span>55%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="55"></div>
-                        </div>
-                    </div>
+            <div class="skill-progress-item">
+              <div class="skill-progress-header">
+                <span>Node.js</span>
+                <span>55%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="55"></div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="skill-progress-item">
+              <div class="skill-progress-header">
+                <span>Python</span>
+                <span>60%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="60"></div>
+              </div>
+            </div>
+
+            <div class="skill-progress-item">
+              <div class="skill-progress-header">
+                <span>Database Design</span>
+                <span>70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="70"></div>
+              </div>
+            </div>
+
+            <div class="skill-progress-item">
+              <div class="skill-progress-header">
+                <span>UI/UX Design</span>
+                <span>65%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="65"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Get In Touch</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Let's connect and discuss opportunities
+          </p>
+        </div>
+        <div class="contact-grid">
+          <!-- contact info -->
+          <div class="contact-info" data-aos="fade-right">
+            <h3>Let's talk about everything!</h3>
+            <p>
+              I'm always open to discussing new opportunities, interesting
+              projects, or just having a chat about technology and innovation.
+            </p>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <div class="contact-label">Email</div>
+                <div class="contact-value">charindumadhusanka801@gmail.com</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+              <div class="contact-details">
+                <div class="contact-label">LinkedIn</div>
+                <div class="contact-value">
+                  <a href="linkedin.com/in/charindu-madhusanka"
+                    >linkedin.com/in/charindu-madhusanka</a
+                  >
                 </div>
-                
-                <div>
-                    <div class="skill-progress-item">
-                        <div class="skill-progress-header">
-                            <span>Python</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="60"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-progress-item">
-                        <div class="skill-progress-header">
-                            <span>Database Design</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="70"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-progress-item">
-                        <div class="skill-progress-header">
-                            <span>UI/UX Design</span>
-                            <span>65%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="65"></div>
-                        </div>
-                    </div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div class="contact-details">
+                <div class="contact-label">GitHub</div>
+                <div class="contact-value">
+                  <a href="github.com/charindu36">github.com/charindu36</a>
                 </div>
-             </div>
-        </div>
-     </section>
-
-     <!-- contact section -->
-      <section id="contact">
-        <div class="container">
-            <div class="section-title" data-aos="fade-up">
-                <h2>Get In Touch</h2>
-                <div class="section-divider"></div>
-                <p class="section-subtitle">
-                    Let's connect and discuss opportunities
-                </p>
+              </div>
             </div>
-            <div class="contact-grid">
-                <!-- contact info -->
-                 <div class="contact-info" data-aos="fade-right">
-                    <h3>Let's talk about everything!</h3>
-                    <p>I'm always open to discussing new opportunities, interesting projects, 
-                        or just having a chat about technology and innovation.
-                    </p>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <div class="contact-label">Email</div>
-                            <div class="contact-value">charindumadhusanka801@gmail.com</div>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </div>
-                        <div class="contact-details">
-                            <div class="contact-label">LinkedIn</div>
-                            <div class="contact-value"><a href="linkedin.com/in/charindu-madhusanka">linkedin.com/in/charindu-madhusanka</a></div>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fa-brands fa-github"></i>
-                        </div>
-                        <div class="contact-details">
-                            <div class="contact-label">GitHub</div>
-                            <div class="contact-value"><a href="github.com/charindu36">github.com/charindu36</a></div>
-                        </div>
-                    </div>
-                    <!-- social link -->
-                     <div class="social-links">
-                        <a href="" class="social-link">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="" class="social-link">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="" class="social-link">
-                            <i class="fab fa-discord"></i>
-                        </a>
-                     </div>
-                 </div>
-                 <!-- contact form -->
-                  <div data-aos="fade-left">
-                    <!-- <form action="https://script.google.com/macros/s/AKfycbyR2aB_jxTcBxUQhHzYUMRAzvVyOtQByLI6e7NBJoeNMVD5HAwdWGiVKsWwCMPl-o9dDg/exec" method="POST"  class="contact-form"> -->
-                        <form action="https://formsubmit.co/53df9789d4580215cf99cfe56ab2edce" method="POST"  class="contact-form">
-                        <!-- honeypot //////////////////////-->
-                        <input type="text" name="_honey" style="display: none;">
-                        <!-- disable captcha -->
-                         <input type="hidden" name="_captcha" value="false">
-                         <input type="hidden" name="_next" value="https://portfolio-website-madhusanka.netlify.app/success.html">
-                        <!-- //////////////////////////// -->
-                        <div class="form-group">
-                            <label>Name</label>
-                            <input type="text" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Email</label>
-                            <input type="email" name="email" placeholder="your.email@example.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Subject</label>
-                            <input type="text" name="subject" placeholder="Project Discussion">
-                        </div>
-                        <div class="form-group">
-                            <label>Message</label>
-                            <textarea type="text" name="message" placeholder="Tell me about your project..."></textarea>
-                        </div>
-                        <button type="submit" name="submit" class="submit-btn">Send Message</button>
-                    </form>
-                  </div>
+            <!-- social link -->
+            <div class="social-links">
+              <a href="" class="social-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="" class="social-link">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="" class="social-link">
+                <i class="fab fa-discord"></i>
+              </a>
             </div>
+          </div>
+          <!-- contact form -->
+          <div data-aos="fade-left">
+            <!-- <form action="https://script.google.com/macros/s/AKfycbyR2aB_jxTcBxUQhHzYUMRAzvVyOtQByLI6e7NBJoeNMVD5HAwdWGiVKsWwCMPl-o9dDg/exec" method="POST"  class="contact-form"> -->
+            <form
+              action="https://formsubmit.co/53df9789d4580215cf99cfe56ab2edce"
+              method="POST"
+              class="contact-form"
+            >
+              <!-- honeypot //////////////////////-->
+              <input type="text" name="_honey" style="display: none" />
+              <!-- disable captcha -->
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_next"
+                value="https://portfolio-website-madhusanka.netlify.app/success.html"
+              />
+              <!-- //////////////////////////// -->
+              <div class="form-group">
+                <label>Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="your.email@example.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label>Subject</label>
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Project Discussion"
+                />
+              </div>
+              <div class="form-group">
+                <label>Message</label>
+                <textarea
+                  type="text"
+                  name="message"
+                  placeholder="Tell me about your project..."
+                ></textarea>
+              </div>
+              <button type="submit" name="submit" class="submit-btn">
+                Send Message
+              </button>
+            </form>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- footer -->
-       <footer>
-        <div class="container">
-            <p>&copy;2025 charindu-madhusanka. All rights reserved.</p>
-            <p class="footer-subtitle">Built with ❤️ using HTML, CSS, and JavaScript</p>
-        </div>
-        <div class="top"><a href="#home"><i class="fa-solid fa-arrow-up-from-bracket"></i></a></div>
-       </footer>
-    
-       
-       <script src="https://smtpjs.com/v3/smtp.js"></script>
-     <script src="script.js"></script>
-     <script src="notification.js"></script>
-</body>
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <p>&copy;2025 charindu-madhusanka. All rights reserved.</p>
+        <p class="footer-subtitle">
+          Built with ❤️ using HTML, CSS, and JavaScript
+        </p>
+      </div>
+      <div class="top">
+        <a href="#home"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+      </div>
+    </footer>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+    <script src="notification.js"></script>
+  </body>
 </html>

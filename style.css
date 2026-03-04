@@ -242,7 +242,7 @@ body.dark .mobile-menu-btn:hover {
   }
 }
 .mobile-menu a {
-  display: block;
+  display: block; 
   padding: 0.5rem 0;
   text-decoration: none;
   color: inherit;

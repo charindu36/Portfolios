@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
     backSpeed: 30,
     backDelay: 2000,
     loop: true,
-  });
+  }); 
 });
 
 //dark mode toggle
